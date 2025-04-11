@@ -70,9 +70,9 @@ function playRound(userMove) {
 
   resultDisplay.classList.add('visible');
 
-  if (userScore >= 10 || botScore >= 10) {
+  if (userScore >= 5 || botScore >= 5) {
     setTimeout(() => {
-      alert(userScore >= 10 ? "You won the game!" : "Bot won the game!");
+      alert(userScore >= 5 ? "You won the game!" : "Bot won the game!");
       location.reload();
     }, 500); // 500ms delay
   }
