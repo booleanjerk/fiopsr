@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>✋ ✌️ ✊</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1 style="font-size: 3.5em; margin-top: 20px;">✋ ✌️ ✊</h1>
+  
+    <div class="stage-wrapper question-stage-wrap">
+      <div class="grid top-grid">
+        <div id="a" class="streak"></div>
+        <div id="b" class="streak"></div>
+        <div id="c" class="streak"></div>
+        <div id="d" class="streak"></div>
+        <div id="e" class="streak"></div>
+        <div id="f" class="question"></div>
+        <div id="g"><span style="text-decoration: underline;">F</span>act, <br><span style="text-decoration: underline;">I</span>nference, or<br> <span style="text-decoration: underline;">O</span>pinion?</div>
+      </div>
+    </div>
+  
+    <div class="stage-wrapper psr-stage-wrap">
+      <div class="grid bottom-grid">
+        <div id="h"><span id="userMove"></span></div>
+        <div id="i"><span id="result"></span></div>
+        <div id="j"><span id="botMove"></span></div>
+        
+        <div id="k">User Score: <span id="l">0</span></div>
+
+        <div id="m">Bot Score: <span id="n">0</span></div>
+
+        <div id="o"><span style="text-decoration: underline;">P</span>aper, <br><span style="text-decoration: underline;">S</span>cissors, or<br> <span style="text-decoration: underline;">R</span>ock</div>
+      </div>
+    </div>
+  
+    <div id="customPopup" class="popup hidden">
+      <p>Paper...Scissors...Rock</p>
+    </div>
+  
+    <script src="questions.js"></script>  
+    <script src="script.js"></script>
+  </body>
+</html>
