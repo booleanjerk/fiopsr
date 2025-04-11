@@ -98,11 +98,14 @@ document.addEventListener('keydown', (e) => {
       updateStreakDisplay();
 
       if (streak === 5) {
-        setStage('psr');
         const popup = document.getElementById('customPopup');
         popup.classList.remove('hidden');
-        setTimeout(() => popup.classList.add('hidden'), 1500);
+        setTimeout(() => {
+          popup.classList.add('hidden');
+          setStage('psr'); // 🔁 Moved here so border change happens after popup
+        }, 1500);
       }
+      
 
     } else {
       correctStreak = 0;
